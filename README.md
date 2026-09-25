@@ -24,6 +24,7 @@ resume-site/
 ├── index.html   # Page markup and content
 ├── style.css    # All styling
 ├── script.js    # Tab-switching logic
+├── image.jfif    # Your profile image
 └── README.md
 ```
 
@@ -31,16 +32,11 @@ resume-site/
 
 No build tools or installation required.
 
-1. Clone the repository:
+Clone the repository:
    ```bash
-   git clone https://github.com/EhsanMNA/resume-site.git
-   cd resume-site
+   git clone https://github.com/EhsanMNA/Resume.git
+   cd Resume
    ```
-2. Open `index.html` directly in a browser, or serve it locally:
-   ```bash
-   python3 -m http.server 8000
-   ```
-   Then visit `http://localhost:8000`.
 
 ## Customizing
 
