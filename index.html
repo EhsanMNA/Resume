@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ehsan Mahnomaye Aghdam — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="terminal">
+    <div class="titlebar">
+      <div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+      <div class="path">ehsan@devbox: ~/resume</div>
+    </div>
+
+    <div class="termbody">
+      <div class="hero">
+        <!-- Profile photo: replace the <div class="initials"> below with
+             <img src="your-photo.jpg" alt="Ehsan Mahnomaye Aghdam"> to use a real photo -->
+        <div class="avatar">
+          <img src="image.jfif" alt="Ehsan Mahnomaye Aghdam">
+          <!-- <span class="initials">EM</span> -->
+        </div>
+        <div class="hero-text">
+          <div class="prompt-line"><span class="sigil">$</span> <span class="cmd">whoami</span></div>
+          <h1 id="typed-name">Ehsan Mahnomaye Aghdam<span class="cursor" aria-hidden="true"></span></h1>
+          <div class="role">Backend & Frontend Developer</div>
+          <p class="tagline">
+            Backend and frontend developer with hands-on experience building and maintaining
+            Minecraft server networks, custom Spigot/PaperMC plugins, and shopping websites for
+            gaming communities. Comfortable across the stack — from Java plugin development and
+            Redis-based cross-server messaging to Spring Boot services and Tailwind-styled UI.
+          </p>
+          <div class="contact-row">
+            <a href="mailto:ehsanmahnoma84@gmail.com">ehsanmahnoma84@gmail.com</a>
+            <a href="https://github.com/EhsanMNA" target="_blank" rel="noopener">github.com/EhsanMNA</a>
+            <span>+98 993 449 7835</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Resume sections">
+        <button class="tab" role="tab" data-panel="about" aria-selected="true">about</button>
+        <button class="tab" role="tab" data-panel="skills" aria-selected="false">skills</button>
+        <button class="tab" role="tab" data-panel="experience" aria-selected="false">experience</button>
+        <button class="tab" role="tab" data-panel="projects" aria-selected="false">projects</button>
+        <button class="tab" role="tab" data-panel="contact" aria-selected="false">contact</button>
+      </div>
+
+      <!-- ABOUT -->
+      <section class="panel active" id="about" role="tabpanel">
+        <div class="section-title"><span class="sigil">$</span> cat about.md</div>
+        <p class="lead">
+          I'm a backend and frontend developer who has spent most of my working time inside the
+          Minecraft server ecosystem — building custom Spigot and PaperMC plugins, wiring up
+          Redis-backed messaging between servers, and building the shopping websites players use
+          to support the networks they play on. I work comfortably across the stack, from Java
+          and Spring Boot on the backend to HTML, CSS, Tailwind, and JavaScript on the front end.
+        </p>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="panel" id="skills" role="tabpanel">
+        <div class="section-title"><span class="sigil">$</span> ls skills/</div>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <div class="chips">
+              <span class="chip">HTML</span><span class="chip">CSS</span>
+              <span class="chip">JavaScript</span><span class="chip">Tailwind</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <div class="chips">
+              <span class="chip">Java</span><span class="chip">Spring Boot</span>
+              <span class="chip">SQL</span><span class="chip">PostgreSQL</span>
+              <span class="chip">Redis</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Minecraft Development</h3>
+            <div class="chips">
+              <span class="chip">Spigot</span><span class="chip">PaperMC</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Tooling</h3>
+            <div class="chips">
+              <span class="chip">Git</span><span class="chip">Maven</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="panel" id="experience" role="tabpanel">
+        <div class="section-title"><span class="sigil">$</span> git log --author="ehsan" --oneline</div>
+
+        <div class="job">
+          <div class="job-head">
+            <span class="job-title">Backend & Plugin Developer</span>
+            <span class="job-company">@ Minecraft Server Networks</span>
+          </div>
+          <ul class="job-desc">
+            <li>Developed and maintained custom Java plugins for Minecraft server networks including GunMax, SakuraMine, NeoCraft, DragonNetwork, StarRealms, and others.</li>
+            <li>Built Redis-backed cross-server messaging systems to keep gameplay and player data in sync across networks.</li>
+            <li>Built custom gamemodes and GUI-based menu systems for Spigot/PaperMC servers.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <span class="job-title">Full-Stack Developer</span>
+            <span class="job-company">@ ApexMine</span>
+          </div>
+          <ul class="job-desc">
+            <li>Built the ApexMine Minecraft shopping website, handling both frontend and backend.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="panel" id="projects" role="tabpanel">
+        <div class="section-title"><span class="sigil">$</span> ls -la projects/</div>
+        <div class="projects">
+          <div class="project">
+            <div class="project-head">
+              <h3>Disaster</h3>
+            </div>
+            <div class="stack">Java · Spigot</div>
+            <p>A Minecraft minigame gamemode plugin.</p>
+            <a href="https://github.com/EhsanMNA/Disaster" target="_blank" rel="noopener">github.com/EhsanMNA/Disaster →</a>
+          </div>
+          <div class="project">
+            <div class="project-head">
+              <h3>MenuMine</h3>
+            </div>
+            <div class="stack">Java · Spigot</div>
+            <p>A Spigot plugin for building menu GUIs.</p>
+            <a href="https://github.com/EhsanMNA/MenuMine" target="_blank" rel="noopener">github.com/EhsanMNA/MenuMine →</a>
+          </div>
+          <div class="project">
+            <div class="project-head">
+              <h3>JedisMessages</h3>
+            </div>
+            <div class="stack">Java · Spigot · Redis</div>
+            <p>A Spigot and Redis based plugin for sending messages between servers.</p>
+            <a href="https://github.com/EhsanMNA/JedisMessages" target="_blank" rel="noopener">github.com/EhsanMNA/JedisMessages →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="panel" id="contact" role="tabpanel">
+        <div class="section-title"><span class="sigil">$</span> cat contact.json</div>
+        <div class="contact-grid">
+          <div class="contact-item"><span>email</span><a href="mailto:ehsanmahnoma84@gmail.com">ehsanmahnoma84@gmail.com</a></div>
+          <div class="contact-item"><span>github</span><a href="https://github.com/EhsanMNA" target="_blank" rel="noopener">EhsanMNA</a></div>
+          <div class="contact-item"><span>phone</span><span>+98 993 449 7835</span></div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer class="note">navigate with the tabs above</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
